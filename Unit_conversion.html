@@ -7,10 +7,34 @@
         <section id="home">
             <header>Unit Conversions</header>
             <nav>
+                <div class="topmenu">
                 <a herf="#temperature"><button id="topmenu">Temperature</button></a>
                 <a herf="#weight"><button id="topmenu">Weight</button></a>
-                <a herf="#distance"><button id="topmenu">Distance</button></a>           
+                <a herf="#distance"><button id="topmenu">Distance</button></a>
+                </div>
             </nav>
+            <div style="clear:both;"></div>
+    <div id="all conversion units">
+            <section id="temperature" class="b temperature">
+            <div id="temp">
+                <figure>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+                    <figcaption>Celcius to Farenheit Conversion</figcaption>
+                </figure>
+                <article>
+                <fieldset>
+                    <legend>Temperature</legend>
+                    <label for="Temperature" >Celsius</label><br/>
+                    <input id="c" type="nuumber"><br/>
+                    <button id ="temperature">Convert</button><br/>
+                    <input id="f" type="number"><br/>
+                    <label for="Temperature">Fahrenheit</label>
+                </fieldset>
+                <aside>
+                    To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C Ã— 9/5) + 32 
+                </aside>
+                </article>
+            </div>
         </section>
     </body>
 </html>
