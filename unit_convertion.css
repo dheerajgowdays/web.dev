@@ -41,3 +41,17 @@ header{
 #all-conversion-sections{
     display: grid;
     justify-content:left;
+}
+figure{
+    float:left;
+    justify-self:auto;
+    width: 200px;
+}
+img{
+    width:200px;
+}
+figcaption{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+}
