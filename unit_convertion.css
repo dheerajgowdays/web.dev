@@ -1,0 +1,13 @@
+body{
+    margin:10px;
+    background-color: black;
+}
+#home{
+    padding-bottom:1cm;
+    margin-top:-1;
+    margin-left:-1;
+    margin-right:-1;
+    padding-bottom:2cm;
+    padding-top:1cm;
+    background-color:  #483355;
+}
