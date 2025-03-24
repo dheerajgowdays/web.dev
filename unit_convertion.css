@@ -55,3 +55,15 @@ figcaption{
     font-size: 20px;
     text-align: center;
 }
+button{
+    font-size: 20px;
+    background-color: lightgreen;
+    padding-left: 15px;
+    padding-right:15px;
+    border:transparent;
+    width: fit-content;
+    border-radius: 40px;
+}
+button:hover{
+    cursor: pointer;
+}
