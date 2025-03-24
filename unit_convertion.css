@@ -79,5 +79,13 @@ button:hover{
     position:fixed;
     bottom:40px;
     left:0;
-
 } 
+.temperature{
+    border-top-color:green ;
+}
+.weight{
+    border-top-color: coral;
+}
+.Distance{
+    border-top-color:cyan;
+}
