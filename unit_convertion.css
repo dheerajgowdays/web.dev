@@ -32,3 +32,12 @@ header{
     text-decoration:solid;
     border-radius: 1mm;
 }
+.topmenu :hover{
+    color:white;
+    font-weight: bolder;
+    background-color: #382742;
+    text-decoration:underline;
+}
+#all-conversion-sections{
+    display: grid;
+    justify-content:left;
