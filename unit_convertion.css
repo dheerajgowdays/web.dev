@@ -11,3 +11,11 @@ body{
     padding-top:1cm;
     background-color:  #483355;
 }
+header{
+    font-size:30px;
+    font-style:normal;
+    font-weight: 1000;
+    color: rgb(239, 235, 242);
+    padding-left: 2cm;
+    float: left;
+}
