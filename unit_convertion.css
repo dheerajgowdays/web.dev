@@ -19,3 +19,16 @@ header{
     padding-left: 2cm;
     float: left;
 }
+.topdiv{
+    float:right;
+    padding-right:0cm;
+}
+.topmenu{
+    color:lightgray;
+    background-color: #483355;
+    margin:10px;
+    padding:1;
+    font-size:20px;
+    text-decoration:solid;
+    border-radius: 1mm;
+}
