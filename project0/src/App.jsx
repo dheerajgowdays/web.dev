@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FlaskConical } from 'lucide-react'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <nav className='flex p-4 flex-row justify-between items-center'>
+        <div className='flex px-4 flex-row items-center'>
+            <a href=''><p className='font-sans flex items-start '>About</p></a>
+            <a href=''><p className='font-sans flex items justify-between '>Store</p></a>
+        </div>
+        <div className='flex flex-row py-1 items-center '>
+          <a href=''>Gmail</a>
+          <a href=''>Images</a>
+          <a href=''>Advance </a>
+          <a href=''><FlaskConical /></a>
+        </div>
+      </nav>
+      
+    </div>
   )
 }
 
-export default App
+export default App 
+
+
+
+ 
+        
+       
