@@ -36,5 +36,5 @@ def create_post(new_post:Post):
 def get_post(id: int, response: Response):
     post = find_posts(id)
     if not post:
-        response.status_code = 404
+        response.status = 
     return {"post_details":post}
