@@ -4,8 +4,7 @@ from typing import Optional,List
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
-import app.models as models
-from . import schemas,utils
+from . import schemas,utils,models
 from app.database import engine, SessionLocal
 from sqlalchemy.orm import Session
 from .routers import post,user
@@ -13,14 +12,7 @@ from .routers import post,user
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+  
 
 # while True:
 #     try:

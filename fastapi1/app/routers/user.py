@@ -1,10 +1,11 @@
 from .. import schemas,models,utils,main
 from fastapi import FastAPI,Response,status,HTTPException,Depends,APIRouter
 from sqlalchemy.orm import Session
-from .. import get_db
+from ..database import get_db
 
 router = APIRouter(
-    prefix="/user"
+    prefix="/user",
+    tags=["Users"]
 )
 
 @router.post("/",status_code=status.HTTP_201_CREATED,response_model=schemas.UserOut)
