@@ -11,8 +11,7 @@ from .routers import post,user
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
-  
+app = FastAPI()  
 
 # while True:
 #     try:
