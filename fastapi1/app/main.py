@@ -1,13 +1,15 @@
 from fastapi import FastAPI, status, HTTPException, Response, Depends
-from fastapi.params import Body
-from typing import Optional,List
 import psycopg2
 from psycopg2.extras import RealDictCursor
-import time
-from . import schemas,utils,models
-from app.database import engine, SessionLocal
-from sqlalchemy.orm import Session
+from . import models
+from app.database import engine
 from .routers import post,user,auth
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    database_password: str = "localhost"
+    database_username: str = "postgres"
+    secret_key: str = "hello"
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -28,17 +30,6 @@ app = FastAPI()
 #         print("connecting to database failed check your code")
 #         print("Error:", error)
 #         time.sleep(2)
-
-my_posts = [
-    {"title": "post1", "content": "about post1", "id": 1},
-    {"title": "post2", "content": "about post2", "id": 2},
-]
-
-
-def find_posts(id):
-    for p in my_posts:
-        if p["id"] == id:
-            return p
 
 app.include_router(post.router)
 app.include_router(user.router)
