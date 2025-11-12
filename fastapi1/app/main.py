@@ -6,10 +6,7 @@ from app.database import engine
 from .routers import post,user,auth
 from pydantic_settings import BaseSettings
 
-class Settings(BaseSettings):
-    database_password: str = "localhost"
-    database_username: str = "postgres"
-    secret_key: str = "hello"
+
 
 models.Base.metadata.create_all(bind=engine)
 
