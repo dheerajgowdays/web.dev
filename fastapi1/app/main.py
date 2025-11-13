@@ -4,8 +4,7 @@ from psycopg2.extras import RealDictCursor
 from . import models
 from app.database import engine
 from .routers import post,user,auth
-from pydantic_settings import BaseSettings
-
+from .config import settings
 
 
 models.Base.metadata.create_all(bind=engine)
