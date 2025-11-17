@@ -43,6 +43,6 @@ class TokenData(BaseModel):
     id : Optional[str] = None
 
 class Like(BaseModel):
-    user_id: int
-    dir: conint
+    post_id: int
+    dir: conint(ge=0, le=1)
 
